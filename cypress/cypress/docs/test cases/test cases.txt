@@ -1,0 +1,23 @@
+FUNCIONALIDADE: Busca e visualização de cursos
+
+    CENÁRIO #1: Busca de curso por professor
+      Dado o site da estratégia concursos
+      E clico em busca "Por Professor"
+      E seleciono professora "Ena Loiola"
+      Quando escolho algum curso disponível
+      Então verifico o valor do curso na listagem é igual ao valor da página de detalhes do curso
+      E também verifico se o valor parcelado do curso bate com o valor total do curso
+    
+    CENÁRIO #2: Busca de curso por concursos
+      Dado o site da estratégia concursos
+      E clico em busca "Por Concursos"
+      E seleciono os cursos da "Polícia Federal"
+      Quando escolho algum curso disponível
+      Então verifico se o valor parcelado do curso bate com o valor total do curso
+
+    CENÁRIO #3: Busca de curso por matéria
+      Dado o site da estratégia concursos
+      E clico em busca "Por Matéria"
+      E seleciono os cursos de "Banco de dados"
+      Quando escolho seleciono o curso "Assinatura Basica 1 ano"
+      Então verifico o valor total com o desconto é igual ao valor a vista do curso 

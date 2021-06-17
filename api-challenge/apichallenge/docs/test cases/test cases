@@ -1,0 +1,80 @@
+
+FUNCIONALIDADE: Registro de novo usuário
+
+    CENÁRIO #1: Cadastro válido
+      Dado um nome, email e senha válidos
+      Quando chamo a rota de registro
+      Então registrará um novo usuário
+      E gerará um token de acesso
+
+    CENÁRIO #2: Cadastro inválido
+      Dado um nome
+      Quando chamo a rota de registro
+      Então retornará um erro de solicitação inválida
+
+FUNCIONALIDADE: Login de usuário
+
+    CENÁRIO #3: Login válido
+      Dado as credenciais(email e senha) válidas
+      Quando chamo a rota de autenticação
+      Então retornará as informações do usuário
+      E gerará um token de acesso
+
+    CENÁRIO #4: Login inválido
+      Dado as credenciais(email e senha) inválidas
+      Quando chamo a rota de autenticação
+      Então retornará erro de autenticação
+
+FUNCINALIDADE: Criar um novo projeto
+
+    CENÁRIO #5: Criação de um novo projeto
+      Dado um usuário autenticado
+      E preencher todos os campos da requisição
+      Quando chamar a rota de criação de projetos
+      Então deverá criar um novo projeto
+      E retornar os dados do projeto
+
+FUNCIONALIDADE: Buscar todos os projetos
+
+    CENÁRIO #6: Buscar todos os projetos
+    Dado um usuário autenticado
+    Quando chamar a rota para buscar todos os projetos
+    Então retornará os dados de todos os projetos
+
+FUNCIONALIDADE: Buscar projeto pelo ID
+
+    CENÁRIO #7: Buscar projeto com ID válido
+      Dado um usuário autenticado
+      E ele possui um ID válido de projeto
+      Quando ele chama a rota para buscar o projeto pelo ID
+      Então retornará os dados do projeto especificado
+
+    CENÁRIO #8: Buscar projeto com ID inválido
+      Dado um usuário autenticado
+      E ele possui um ID inválido de projeto
+      Quando ele chama a rota para buscar o projeto pelo ID
+      Então retornará um erro de não encontrado
+
+FUNCIONALIDADE: Atualizar projeto pelo ID
+
+    CENÁRIO #9: Atualizar tarefa de um projeto com ID válido
+      Dado um usuário autenticado
+      E ele possui um ID válido de projeto
+      E atualizar os campos de da tarefa do projeto
+      Quando ele chama a rota de atualizar o projeto pelo ID
+      Então retornará os dados do projeto atualizado
+
+    CENÁRIO #10: Atualizar tarefa de um projeto com ID inválido
+      Dado um usuário autenticado
+      E ele possui um ID válido de projeto
+      E atualizar os campos de da tarefa do projeto
+      Quando ele chama a rota de atualizar o projeto pelo ID
+      Então retornará um erro de não encontrado
+
+FUNCIONALIDADE: Deletar projeto pelo ID
+
+    CENÁRIO #11: Deletar projeto com ID válido
+      Dado um usuário autenticado
+      E ele possui um ID válido de projeto
+      Quando chama a rota de deletar o projeto pelo ID
+      Então retornará resposta sem conteúdo

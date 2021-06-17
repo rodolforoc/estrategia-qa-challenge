@@ -1,0 +1,16 @@
+Título: Melhorias: Adicionar tratativa de erros na respostas da API
+
+Tipo: Melhorias
+Prioridade: Baixa
+
+Descrição:
+  - Seria interessante adicionar mais dois campos, como no exemplo abaixo.
+      {
+        "hasError": bool,
+        "message": string
+      }
+  Quando ocorrer algum erro na api, retornará avisando que teve erro e no campo de mensagem terá o erro que ocorreu,
+  isso facilita o frontend dar um feedback pro usuário oque aconteceu.
+
+Anexos:
+ - N/A

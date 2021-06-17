@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+screenshots
+videos
+.idea
+.pytest_cache
+build
+dist
+apichallenge.egg-info
+__pycache__

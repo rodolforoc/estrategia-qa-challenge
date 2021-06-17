@@ -1,0 +1,35 @@
+Título: Melhorias: Alguns links/botões estão sem efeito hover
+
+Tipo: Melhorias
+Prioridade: Baixa
+
+Descrição:
+  - A maioria dos botões e link do site possuem o efeito hover("Quando o usuário coloca o mouse em cima do elemento"), e quando ativo
+  muda a cor do elemento ou do background para informar o usuário oque ele está selecionando, conforme podemos ver no anexo hover.gif.
+  Porém em alguns botões/links presentes no anexo missing-hover.gif não possuem esse efeito, é interessante adicionar esse efeito a 
+  esses elementos para mantêr o comportamento padrão do site.
+
+Anexos:
+ - hover.gif
+ - missing-hover.gif
+
+ --------------------------------------\\---------------------------------------------
+Título: Melhorias: Filtro na listagem de cursos por professor/matéria
+
+Tipo: Melhorias
+Prioridade: Baixa
+
+Descrição:
+  - Na pagina de cursos por concurso, possuimos uma lista bem grande de concursos e um filtro para auxiliar o usuário final, como segue no
+  anexo filtro-concurso.gif. Porém quando acessamo a página de cursos por professor(anexo: curso-professores.gif) e a página de cursos por
+  matéria(anexo: curso-materias.gif), também possuimos uma lista grande de professores e matérias, e não temos nenhum filtro para essas 
+  listagens. É interessante adicionar esse filtro para auxiliar o usuário final nessas buscas.
+
+  Ponto para discussão:
+  - Como temos listas muito grandes de concursos, professores e matérias, talvez seria interessante adicionar paginação para versão WEB e
+  mantêr a rolagem infinita apenas para a versão MOBILE.
+
+Anexos:
+ - filtro-concurso.gif
+ - curso-professores.gif
+ - curso-materias.gif
